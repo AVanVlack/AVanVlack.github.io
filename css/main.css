@@ -1,0 +1,230 @@
+/* GENERAL
+********************************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+#content {
+    z-index: 1;
+    position: relative;
+    background: white;
+    margin-bottom: 160px;
+    padding-bottom: 20px;
+}
+/* HEADING
+********************************/
+
+header {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.menubar {
+    position: fixed;
+    top: 0px;
+    width: inherit;
+    max-height: 50px;
+    border-bottom: 1px solid black;
+    background: #3F585F;
+}
+header .menubar {
+    top: -50px;
+    transition: top .5s;
+}
+#logo {
+    margin-left: 2%;
+    display: block;
+}
+h1 {
+    font-size: 1.3em;
+}
+h2 {
+    font-size: 0.75em;
+    margin: -5px 0 0;
+    font-weight: bold;
+}
+/* NAVIGATION
+********************************/
+
+nav {
+    text-align: center;
+    z-index: 2;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 100%
+}
+nav li {
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+}
+nav a {
+    font-weight: 800;
+    display: block;
+    padding: 10px;
+    overflow: hidden;
+    font-family: Raleway;
+    font-weight: 400;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+/* FOOTER
+********************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    height: 160px;
+    color: #ccc;
+    background: #0b1821;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+#footer-first ul li:nth-child(n+3) {
+    color: #747C7C;
+}
+#footer-first {
+    float: left;
+}
+#footer-second {
+    float: right;
+}
+#footer-content {
+    text-align: left;
+    float: left;
+    margin-top: 20px
+}
+.foot-list {
+    list-style: none;
+    line-height: 20px;
+}
+/* PAGE: LANDING
+********************************/
+
+#landing {
+    background: url(/img/landing_background.jpg) no-repeat left, #746C7B;
+    background-position: left center;
+    margin: 0;
+    margin-bottom: 80px;
+    height: 100vh;
+    width: 100%;
+    max-height: 680px;
+}
+#landing .menubar {
+    position: absolute;
+    background: rgba(49, 66, 70, 0.56);
+    border: 0;
+}
+figcaption {
+    position: absolute;
+    top: 55vh;
+    left: 40%;
+    width: 200px;
+    color: white;
+    margin: 0;
+    font-size: 20pt;
+    font-family: Raleway;
+    line-height: 25px;
+}
+#landing hr,
+#landing p {
+    position: relative;
+    top: -1.5rem;
+}
+#landing p {
+    top: -3rem;
+}
+/* COLORS
+********************************/
+
+a {
+    color: #6ab47b;
+}
+h1,
+h2 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+nav {
+    background-color: #47384D;
+}
+nav a,
+nav a:visited {
+    color: #fff;
+}
+nav a.selected,
+nav a:hover {
+    color: #F53357;
+}
+/* HAMBURGER
+********************************/
+
+.hamburger {
+    position: relative;
+    float: right;
+    width: 1em;
+    height: 1em;
+    font-size: 50px;
+    display: block;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+.hamburger:hover {
+    background: #47384D;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+.hamburger>span {
+    position: absolute;
+    font-size: .3em;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .1em;
+    width: 1em;
+    background: white;
+    transition: all .3s ease-out;
+}
+.hamburger>span:before,
+.hamburger>span:after {
+    content: " ";
+    width: 100%;
+    height: inherit;
+    background: inherit;
+    position: absolute;
+    -webkit-transition: inherit;
+    transition: inherit;
+}
+.hamburger>span:before {
+    top: -.4em;
+}
+.hamburger>span:after {
+    top: .4em;
+}
+.hamburger.x>span {
+    width: 1.25em;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+.hamburger.x>span:before,
+.hamburger.x>span:after {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: 0;
+}
