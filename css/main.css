@@ -2,20 +2,86 @@
 ********************************/
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    font-family: 'raleway', serif;
 }
 a {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'raleway', serif;
 }
 #content {
     z-index: 1;
     position: relative;
-    background: white;
+    background: #232B31;
     margin-bottom: 160px;
-    padding-bottom: 20px;
 }
+#landing .menu {
+    display: none;
+}
+#active {
+    background: lightgreen;
+}
+
+
+.field_input {
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1.25em;
+    padding: 0.3125em .8em;
+    height: 2.5em;
+    width: 100%;
+    outline: none;
+    border: 0.225em solid #2ecc71;
+    background: #543E67;
+    z-index: 3;
+}
+.field {
+    text-align: left;
+    margin: 10px 0;
+}
+.field_label {
+    display: none
+}
+
+.btn-group button {
+    border: none;
+    background: #1abc9c;
+    padding: 8px;
+    width: 90px;
+    color: white;
+    border-radius: 5px;
+}
+
+.active {
+    background: red;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#summery,
+#work,
+#projects,
+#details,
+#contact {
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-sizing:border-box;
+}
+#summery,
+#projects,
+#details,
+#contact {
+    padding: 16px 30px;
+}
+
+i {
+    color: #2BFECD;
+}
+
 /* HEADING
 ********************************/
 
@@ -29,8 +95,7 @@ header {
     top: 0px;
     width: inherit;
     max-height: 50px;
-    border-bottom: 1px solid black;
-    background: #3F585F;
+    background: #2e3842;
 }
 header .menubar {
     top: -50px;
@@ -57,6 +122,8 @@ nav {
     position: fixed;
     top: 50px;
     width: 100%;
+    display: none;
+    background-color: #21b2a6;
 }
 nav ul {
     list-style: none;
@@ -64,7 +131,6 @@ nav ul {
     margin-bottom: 100%
 }
 nav li {
-    display: block;
     font-size: 20px;
     padding: 10px;
 }
@@ -73,7 +139,7 @@ nav a {
     display: block;
     padding: 10px;
     overflow: hidden;
-    font-family: Raleway;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     border: 1px solid white;
     border-radius: 8px;
@@ -98,9 +164,12 @@ footer {
 }
 #footer-first {
     float: left;
+    margin-left: 20px;
 }
 #footer-second {
     float: right;
+    margin-left: 20px;
+
 }
 #footer-content {
     text-align: left;
@@ -111,43 +180,111 @@ footer {
     list-style: none;
     line-height: 20px;
 }
-/* PAGE: LANDING
+/* Section: LANDING
 ********************************/
 
 #landing {
-    background: url(/img/landing_background.jpg) no-repeat left, #746C7B;
-    background-position: left center;
+    background: url(/img/background.jpg) no-repeat #16A085;
+    background-size: cover;
     margin: 0;
-    margin-bottom: 80px;
     height: 100vh;
     width: 100%;
     max-height: 680px;
 }
 #landing .menubar {
     position: absolute;
-    background: rgba(49, 66, 70, 0.56);
+    background: rgba(49, 66, 70, 0.7);
     border: 0;
 }
-figcaption {
-    position: absolute;
-    top: 55vh;
-    left: 40%;
-    width: 200px;
+#drive {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 25vh;
+    text-align: center;
+}
+#drive h1 {
+    font-size: 30px;
     color: white;
-    margin: 0;
-    font-size: 20pt;
-    font-family: Raleway;
-    line-height: 25px;
+    font-weight: bold;
+    
 }
-#landing hr,
-#landing p {
-    position: relative;
-    top: -1.5rem;
+#drive h2 {
+    font-size: 20px;
+    font-family: Esteban;
 }
-#landing p {
-    top: -3rem;
+
+
+/* Section: Summery
+********************************/
+#summery {
+    background: #21B2A6;
 }
-/* COLORS
+
+/* Section: Work
+********************************/
+#work {
+    background: #2A333B;
+}
+#work div {
+    font-size: 0;
+}
+#work img {
+    width: 100%;
+}
+
+#work p {
+    margin: 16px 16px;
+    padding-bottom: 16px;
+    font-size: 15px;
+}
+#work h2 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+#work-one {
+    background-color: #2A333C;
+}
+#work-two {
+    background-color: #262F36;
+}
+#work-three {
+    background-color: #232B32;
+}
+
+
+
+
+/* Section: Details
+********************************/
+#details {
+    background: #505491;
+}
+
+#details ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Section: Contact
+********************************/
+#contact {
+    background: #543E67;
+}
+#contact ul li {
+    display: inline-block;
+}
+.twitter {
+    background: #3498db;
+}
+.linkedIn {
+    background: #c0392b;
+}
+.plus {
+    background: #2ecc71;
+}
+
+/* Text
 ********************************/
 
 a {
@@ -156,11 +293,8 @@ a {
 h1,
 h2 {
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-}
-nav {
-    background-color: #47384D;
 }
 nav a,
 nav a:visited {
