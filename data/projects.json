@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "name":"Giffard",
+      "url":"https://github.com/AVanVlack/Giffard/",
+      "desc":"Fullstack webapp to share and find animated GIFS."
+    },
+    {
+      "name":"The Monster in the Window",
+      "url":"https://github.com/AVanVlack/CVMonster",
+      "desc":"An interactive monster display with computer vision."
+    },
+    {
+      "name":"Garden Minder",
+      "url":"https://github.com/Volution-Labs/garden-server",
+      "desc":"Garden automation software and hardware."
+    }
+  ]
+}
