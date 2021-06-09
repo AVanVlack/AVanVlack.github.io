@@ -3,12 +3,12 @@
     {
       "name":"Giffard",
       "url":"https://github.com/AVanVlack/Giffard/",
-      "desc":"Fullstack webapp to share and find animated GIFS."
+      "desc":"Node/React webapp for sharing animated GIFS"
     },
     {
       "name":"The Monster in the Window",
       "url":"https://github.com/AVanVlack/CVMonster",
-      "desc":"An interactive monster display with computer vision."
+      "desc":"An interactive media display that utilizes computer vision."
     },
     {
       "name":"Garden Minder",
