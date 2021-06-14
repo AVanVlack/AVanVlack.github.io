@@ -2,7 +2,7 @@
 
 > A place to display a portfolio and write a blog.
 
-A blog and portfolio website built using the Hugo statics generator. Site located at [drewvanvlack.com](https://drewvanvlack.com) Theme adapted from hugo-cactus by ZERAN WU.
+A blog and portfolio website built using the Hugo statics generator. Site located at [drewvanvlack.com](https://drewvanvlack.com). Theme adapted from hugo-cactus by ZERAN WU.
 
 ## Installation and Development
 
